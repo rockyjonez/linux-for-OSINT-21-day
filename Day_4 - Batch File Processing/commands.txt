@@ -11,4 +11,4 @@ bash convert_files.sh
 find txt_files -name "*.zip" -type f | xargs rm -f
 
 
-cat file_names.txt | xargs -I filenamevar zip archive  txt_files/filenamevar
+cat file_names.txt | xargs -I filenamevar zip archive  text_files/filenamevars

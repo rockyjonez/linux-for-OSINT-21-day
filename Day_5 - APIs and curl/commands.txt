@@ -1,0 +1,19 @@
+
+cd Day_5
+curl https://eduscol.education.fr/document/3366/download -o file.pdf
+
+
+xargs -n 1 curl -O < urls.txt
+
+UPDATED: 
+Note: go to netlas.io and sign up for an API key, first. Otherwise this will not work. Also, to view the json, use 
+jsoneditoronline.org and ask it to fix the json. Works beautifully.
+
+curl -X 'GET' \'https://app.netlas.io/api/responses/?q=lidl.com&source_type=include&start=0&fields=*' \-H 'accept: application/json' \
+-H 'X-API-Key: your_api_key_here' \ > api_request_result.txt
+
+
+curl -I https://sector035.nl
+
+
+curl -sIL https://rb.gy/899j50 | grep  ^location
